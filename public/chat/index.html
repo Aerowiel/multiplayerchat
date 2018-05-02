@@ -1,0 +1,58 @@
+<!doctype html>  
+<html>  
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Socket.IO chat</title>
+    <style>
+    </style>
+  </head>
+  <body id="logged-out">
+
+    <section id="chat">
+
+      <div id="headerNavbar">
+        <div class="defileParent">
+          <span id = "slide_text" class="defile"> 
+                
+          </span>
+        </div>
+        <img id ="logo" class="logo" src="logoChat.png">   
+        <button onclick="window.location.href='.'">Logout</button>
+      </div>
+
+      <ul id="messages">
+        
+      </ul>
+
+      <form action="">
+        <input id="m" autocomplete="off"/><button>Send</button>
+      </form>
+
+      <div id="recapusers">
+          <div class="usersConnected">Users Connected</div>
+          <ul id="users" style="list-style-type: none; margin:1%">
+          </ul>
+      </div>
+      <div id="currentUser"><br></div>
+      
+    </section>
+
+    <section id="login">
+      <div class="logPack">
+        <video src="http://i.imgur.com/pIvKZxD.mp4" loop autoplay class="logImg"></video>
+        <form action="">
+          <label for="u">Username : </label>
+          <input id="u" autocomplete="off" autofocus />
+          <input id="y" spellcheck="false" autocomplete="off" />
+          <p>
+            <button>Login</button>
+          </p>
+        </form>
+      </div>
+    </section>
+    <audio id="audioplayer" src="message.mp3" preload="auto"></audio>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client_chat.js"></script>
+  </body>
+</html> 
